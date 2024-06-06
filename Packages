@@ -1,0 +1,91 @@
+Package: ApibugTextToVoice
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Essential: no
+Maintainer: Apibug.com <apibug6@gmail.com>
+Depends: mobilesubstrate
+Conflicts: ApibugTextToVoice
+Replaces: ApibugTextToVoice
+Provides: ApibugTextToVoice
+Filename: ./debs/ApibugTextToVoice_1.0.0_rootless.deb
+Size: 184024
+MD5sum: aeba65b650196fefd74fbb594855a584
+SHA1: bc07c336f1f44928347390eb17ba36be9f62cc09
+SHA256: 884542862b0003dc608b1b031f42238116677e9ef13099443f7834da220f6f67
+Section: custom
+Priority: optional
+Description: 进入微信设置页面开启文字转语音开关
+Author: Apibug.com
+Name: ApibugTextToVoice
+
+Package: byg.iosios.net.axon.rootless
+Version: 2.1.3
+Architecture: iphoneos-arm64
+Maintainer: 搬运工
+Installed-Size: 692
+Depends: mobilesubstrate, firmware (>= 11.0)
+Conflicts: io.ominousness.stackxi, com.thomasfinch.priorityhub, com.ioscreatix.intelixbeta, com.ioscreatix.intelix, com.spiritoflogic.ncunify, com.spiritoflogic.unifyx, com.hidan.nclink10, org.coolstar.ventana-modern, org.coolstar.ventana, org.s1ris.spinxi
+Filename: ./debs/apt.2.7.1.deb
+Size: 1844664
+MD5sum: f44e3bd0e5a9ce7a0f9e16b14a1da25a
+SHA1: 161bae55882416e4ca49cedb3f59335d25fb7043
+SHA256: 53bc523eaa0818849aa1a7d04bab6d6a52f5e802a272931bca8460a21b6d5241
+Section: 系统增强
+Description: 锁屏通知美化。妖刀修复更新支持iOS 16、iOS 17
+Author: Nepeta & Baw Appie & Acreson
+Icon: https://chinesebuilding.club/pic/cydia.png
+Name: Axon美化通知-Rootles
+Sponsor: 搬运工
+
+Package: byg.iosios.net.safarix
+Version: 1.1.1
+Architecture: iphoneos-arm64
+Maintainer: 搬运工
+Installed-Size: 712
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 15.0)
+Filename: ./debs/Axon美化通知-Rootles.2.1.3.deb
+Size: 144508
+MD5sum: a7a743aab7eb512b7094ea534dc87ce2
+SHA1: 550a99aee370623b87528bfaaf4b97a61e8df09e
+SHA256: 83e1da32a9271b72edbd77cc246020f40e434aaa26de9a7fc0f69a385dd077ba
+Section: 系统增强
+Description: Safari Essential Features感谢搬运工源群友萝卜购买并分享此插件，非常感谢好萝卜！此插件为iPhone自带浏览器增强插件，功能非常的多，使用，强烈建议用safri的用户下载！已添加进刀刀源汉化文件，感谢妖刀，本插件非常的好用！推荐！
+Author: 0xkuj
+Icon: https://chinesebuilding.club/pic/cydia.png
+Name: SafariX浏览器增强-Rootless
+Sponsor: 搬运工
+
+Package: com.dao.appprotectrootless
+Version: 1.8.8
+Architecture: iphoneos-arm64
+Maintainer: aReo
+Depends: mobilesubstrate,preferenceloader
+Conflicts: com.flex2areo.appprotect, com.flex2areo.appprotectrootless, com.hk.appprotectrootless
+Filename: ./debs/AppProtect 隐私保护(rootless).deb
+Size: 155400
+MD5sum: 0065e553b19c5fd668973cd6bf5f8625
+SHA1: c297e95b05bfefaa6a03227c360284617c35e2dd
+SHA256: 2011cd161bd3db271ee5a926f46cb41cf5c0e57d7ff02dd73d30134396ad21f9
+Section: 嗨-付费
+Description: 一款强大的App隐私保护插件，系付费插件，自行购买。
+Author: aReo
+Name: AppProtect 隐私保护(rootless)
+Sileodepiction: https://xiangfeidexiaohuo.github.io/sileodepiction/appprotect/js.json
+
+Package: com.dao.apptools15rootless
+Version: 1.2.6
+Architecture: iphoneos-arm64
+Maintainer: aReo
+Depends: firmware (>=15.0), mobilesubstrate
+Conflicts: com.flex2areo.apptools15rootless, com.flex2areo.apptools15, com.hk.apptools15rootless
+Filename: ./debs/AppTools15-16(rootless).deb
+Size: 195768
+MD5sum: 5e992bb6b3f15c84022a9976ec18215e
+SHA1: f62a021ccb4c0c6c1403aa6339b3f2a54a23cab5
+SHA256: 87578c3f3b04ee54601f63a86688dd7d8f28423c848a7d4397752217e532b3f4
+Section: 嗨-付费
+Description: AppTools for iOS15~16，强大的App类辅助插件，可以清理缓存、备份程序、清理角标、自定义分辨率、禁止插件插件注入等，系付费插件，自行购买。
+Author: aReo
+Name: AppTools15-16(rootless)
+Sileodepiction: https://xiangfeidexiaohuo.github.io/sileodepiction/apptools/js.json
+
