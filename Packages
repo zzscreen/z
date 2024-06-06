@@ -200,16 +200,16 @@ Sponsor: admin@25mao.com
 Package: com.HBWechatHelper.ailun
 Version: 1.7.2
 Architecture: iphoneos-arm64
-Maintainer: HuangBai 
+Maintainer: HuangBai <QQ:1343309363@qq.com>
 Depends: mobilesubstrate
 Filename: ./debs/黄白助手1.7.2_iphoneos-arm64_rootless.deb
 Size: 9512088
 MD5sum: ae40fa00c95876f71f1225e07c0ccf9c
 SHA1: 4b489e342d282ea94cf2ef263f916b2bb6c7deaf
 SHA256: 2f96c00003133556c3e0b78e6f4c7e1bd6911e25e8bf55cdeeb7e7d4216e56bf
-Section: 微信插件
+Section: Mao
 Description: 黄白助手-微信插件                                                                                                                                                                 一个微信插件文本转语音以及点歌朋友圈一键点赞等诸多功能（发送网络语录舔狗日记骂人等文案或者4K原图手绘壁纸等，抢私聊红包，自定义信息尾巴，自定义拍一拍 百变小尾巴 实时尾巴时间等功能
-Author: HuangBai 
+Author: HuangBai <QQ:1343309363@qq.com>
 Name: 黄白助手(微信插件)-Rootless
 
 Package: com.ash.milkyway4-ios16fix
@@ -320,6 +320,22 @@ Description: AppTools for iOS15~16，强大的App类辅助插件，可以清理�
 Author: aReo
 Name: AppTools15-16(rootless)
 Sileodepiction: https://xiangfeidexiaohuo.github.io/sileodepiction/apptools/js.json
+
+Package: com.dao.bhtiktokmod
+Version: 2.3
+Architecture: iphoneos-arm64
+Maintainer: Dayanch96
+Depends: mobilesubstrate
+Conflicts: com.bandarhl.bhtiktok, com.hk.bhtiktok.cn.rl, com.dao.bhtiktok
+Filename: ./debs/BHTikTok Plus(rootless).deb
+Size: 481804
+MD5sum: 7e0620a814f17891f449e6f2a7a15a60
+SHA1: 20698a1b6b54fd6491b81e44d129c5c42d7d6b93
+SHA256: 77c7a232a8afe43b21a1bc07e701daee0c573863fc7a19eaa8a9acd7d97e1224
+Section: 嗨-工具
+Description: Dayanch96基于BandarHL开源的BHTikTok优化再开发的Plus版本，支持TikTok去广告、自动下一条、纯净模式、切换地区等、伪造粉丝数，视频下载等。
+Author: Bandar Alruwaili
+Name: BHTikTok Plus(rootless)
 
 Package: com.dao.classicfolders3
 Version: 3.0.4.3
@@ -1114,4 +1130,3 @@ Depiction: https://chariz.com/get/cephei
 Icon: https://img.chariz.cloud/icon/cephei/icon@3x.png
 Name: Cephei Tweak Support
 Support: https://hashbang.productions/support/
-
