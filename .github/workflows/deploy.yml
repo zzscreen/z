@@ -1,0 +1,42 @@
+name: Deploy Sileo Repo
+
+on:
+  push:
+    branches:
+      - main  # 当推送到 main 分支时触发
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Install dpkg-scanpackages
+      run: sudo apt-get update && sudo apt-get install -y dpkg-dev
+
+    - name: Generate Packages file
+      run: dpkg-scanpackages -m ./debs > Packages
+
+    - name: Compress Packages file
+      run: |
+        bzip2 -fks Packages
+        gzip -fk Packages
+
+    - name: Create Release file
+      run: |
+        echo "Origin: YourRepoName" > Release
+        echo "Label: YourRepoName" >> Release
+        echo "Suite: stable" >> Release
+        echo "Version: 1.0" >> Release
+        echo "Codename: yourrepo" >> Release
+        echo "Architectures: iphoneos-arm" >> Release
+        echo "Components: main" >> Release
+        echo "Description: YourRepoDescription" >> Release
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./  # 部署整个仓库
