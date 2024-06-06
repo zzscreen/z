@@ -23,13 +23,9 @@ jobs:
 
     - name: Run generate_packages.sh
       run: bash ./generate_packages.sh
- 
-    - name: Commit and push updated Packages
-      env:
-        GITHUB_TOKEN: ${{ secrets.PAT }}
-      run: |
-      git config --global axs6 "github-actions[bot]"
-      git config --global a200591949@gmail.com "github-actions[bot]@axs6.github.com"
-      git add Packages Packages.bz2 Packages.gz Release
-      git commit -m "Update Packages files"
-      git push origin main
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        personal_token: ${{ secrets.PAT }}  # 使用个人访问令牌
+        publish_dir: ./  # 部署整个仓库
