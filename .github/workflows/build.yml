@@ -32,12 +32,21 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: Generate Packages file
-        run: |
-          sudo rm -f Packages Packages.bz2 Packages.gz
-          sudo dpkg-scanpackages --multiversion debs >> Packages
-          cat Packages | gzip > Packages.gz
-          cat Packages | bzip2 > Packages.bz2
+        
+      - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Install dpkg-scanpackages
+      run: sudo apt-get update && sudo apt-get install -y dpkg-dev
+
+    - name: Generate Packages file
+      run: dpkg-scanpackages -m ./debs > Packages
+
+    - name: Compress Packages file
+      run: |
+        bzip2 -fks Packages
+        gzip -fk Packages
+        
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
