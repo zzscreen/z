@@ -3,7 +3,9 @@ name: Deploy Sileo Repo
 on:
   push:
     branches:
-      - main  # 当推送到 main 分支时触发
+      - main  # 确保这是你的主要开发分支
+    paths:
+      - 'debs/**'  # 监听 debs 目录下的文件变化
 
 jobs:
   build:
@@ -15,6 +17,9 @@ jobs:
 
     - name: Install dpkg-scanpackages
       run: sudo apt-get update && sudo apt-get install -y dpkg-dev
+
+    - name: Ensure script has execute permissions
+      run: chmod +x ./generate_packages.sh
 
     - name: Run generate_packages.sh
       run: bash ./generate_packages.sh
