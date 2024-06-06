@@ -1,8 +1,11 @@
-#!/bin/bash
-dpkg-scanpackages -m . /dev/null > Packages
+dpkg-scanpackages -m ./debs > Packages
 bzip2 -c Packages > Packages.bz2
-xz -c Packages > Packages.xz
+gzip -c Packages > Packages.gz
 
-git add .
-git commit -m "更新文件"
-git push
+cd beta
+
+dpkg-scanpackages -m ./debs > Packages
+bzip2 -c Packages > Packages.bz2
+gzip -c Packages > Packages.gz
+
+cd ..

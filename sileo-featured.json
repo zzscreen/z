@@ -1,24 +1,12 @@
 {
     "class": "FeaturedBannersView",
-    "itemSize": "{320, 230}",
+    "itemSize": "{350, 180}",
     "itemCornerRadius":20,
     "banners": [
         {
-            "url": "http://axs6.github.io/images/lynx2.png",
+            "url": "http://axs6.github.io/pro/images/Axslogo.png",
             "title": "",
-            "package":"lynxtwo",
-            "hideShadow": true
-        },
-        {
-            "url": "http://axs6.github.io/images/misaki.png",
-            "title": "",
-            "package":"com.hitori.misaki",
-            "hideShadow": true
-        },
-        {
-            "url": "http://axs6.github.io/images/iCleaner.png",
-            "title": "",
-            "package":"com.exile90.icleanerpro",
+            "package":"AppData",
             "hideShadow": true
         },
     ]
