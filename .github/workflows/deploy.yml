@@ -3,9 +3,7 @@ name: Deploy Sileo Repo
 on:
   push:
     branches:
-      - main  # 确保这是你的主要开发分支
-    paths:
-      - 'debs/**'  # 监听 debs 目录下的文件变化
+      - main  # 当推送到 main 分支时触发
 
 jobs:
   build:
@@ -18,18 +16,27 @@ jobs:
     - name: Install dpkg-scanpackages
       run: sudo apt-get update && sudo apt-get install -y dpkg-dev
 
-    - name: Ensure script has execute permissions
-      run: chmod +x ./generate_packages.sh
+    - name: Generate Packages file
+      run: dpkg-scanpackages -m ./debs > Packages
 
-    - name: Run generate_packages.sh
-      run: bash ./generate_packages.sh
+    - name: Compress Packages file
+      run: |
+        bzip2 -fks Packages
+        gzip -fk Packages
 
-    - name: Commit and push updated Packages
-  env:
-    GITHUB_TOKEN: ${{ secrets.PAT }}
-  run: |
-    git config --global user.name "github-actions[bot]"
-    git config --global user.email "github-actions[bot]@users.noreply.github.com"
-    git add Packages Packages.bz2 Packages.gz Release
-    git commit -m "Update Packages files"
-    git push origin main
+    - name: Create Release file
+      run: |
+        echo "Origin: YourRepoName" > Release
+        echo "Label: YourRepoName" >> Release
+        echo "Suite: stable" >> Release
+        echo "Version: 1.0" >> Release
+        echo "Codename: yourrepo" >> Release
+        echo "Architectures: iphoneos-arm" >> Release
+        echo "Components: main" >> Release
+        echo "Description: YourRepoDescription" >> Release
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.PAT }}
+        publish_dir: ./  # 部署整个仓库
