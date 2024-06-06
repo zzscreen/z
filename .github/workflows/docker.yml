@@ -23,10 +23,7 @@ jobs:
 
     - name: Run generate_packages.sh
       run: bash ./generate_packages.sh
-
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-   
+ 
     - name: Commit and push updated Packages
       env:
         GITHUB_TOKEN: ${{ secrets.PAT }}
@@ -36,6 +33,3 @@ jobs:
       git add Packages Packages.bz2 Packages.gz Release
       git commit -m "Update Packages files"
       git push origin main
-      with:
-        personal_token: ${{ secrets.PAT }}  # 使用个人访问令牌
-        publish_dir: ./  # 部署整个仓库
