@@ -2,8 +2,9 @@ name: Deploy Sileo Repo
 
 on:
   push:
-    branches:
-      - main  # 当推送到 main 分支时触发
+    branches: ["main"]
+    paths:
+      - 'debs/*.deb'  # 当推送到 main 分支时触发
 
 jobs:
   build:
