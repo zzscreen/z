@@ -13,16 +13,10 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Install dpkg-scanpackages
-      run: sudo apt-get update && sudo apt-get install -y dpkg-dev
-
-    - name: Generate Packages file
-      run: dpkg-scanpackages -m ./debs > Packages
-
-    - name: Compress Packages file
-      run: |
-        bzip2 -fks Packages
-        gzip -fk Packages
+    - name: Install dependencies
+        run: sudo apt-get update && sudo apt-get install -y dpkg-dev
+    - name: Run update.sh
+        run: bash ./update.sh
 
     - name: Create Release file
       run: |
