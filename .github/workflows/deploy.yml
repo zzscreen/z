@@ -13,24 +13,14 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Install dependencies
-        run: sudo apt-get update && sudo apt-get install -y dpkg-dev
-    - name: Run update.sh
-        run: bash ./update.sh
+    - name: Install dpkg-scanpackages
+      run: sudo apt-get update && sudo apt-get install -y dpkg-dev
 
-    - name: Create Release file
-      run: |
-        echo "Origin: YourRepoName" > Release
-        echo "Label: YourRepoName" >> Release
-        echo "Suite: stable" >> Release
-        echo "Version: 1.0" >> Release
-        echo "Codename: yourrepo" >> Release
-        echo "Architectures: iphoneos-arm" >> Release
-        echo "Components: main" >> Release
-        echo "Description: YourRepoDescription" >> Release
+    - name: Run generate_packages.sh
+      run: bash ./generate_packages.sh
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.PAT }}
+        personal_token: ${{ secrets.PAT }}  # 使用个人访问令牌
         publish_dir: ./  # 部署整个仓库
