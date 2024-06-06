@@ -29,6 +29,12 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - name: Generate Packages file
+        run: |
+          sudo rm -f Packages Packages.bz2 Packages.gz
+          sudo dpkg-scanpackages --multiversion debs >> Packages
+          cat Packages | gzip > Packages.gz
+          cat Packages | bzip2 > Packages.bz2
       - name: Checkout
         uses: actions/checkout@v4.1.4
       - name: Setup Pages
