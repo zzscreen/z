@@ -1,9 +1,9 @@
-name: Update Packages on main
+name: Deploy Sileo Repo
 
 on:
   push:
     branches:
-      - main
+      - main  # 或者你的默认分支名称
     paths:
       - 'debs/**'  # 监听 debs 目录下的文件变化
 
@@ -34,13 +34,9 @@ jobs:
         git commit -m "Update Packages files"
         git push origin main
 
-    - name: Create Release file
-      run: |
-        echo "Origin: 💫Axs pro✨" > Release
-        echo "Label: 💫Axs pro✨" >> Release
-        echo "Suite: stable" >> Release
-        echo "Version: 1.0" >> Release
-        echo "Codename: 💫Axs pro✨" >> Release
-        echo "Architectures: iphoneos-arm64 iphoneos-arm64e" >> Release
-        echo "Components: main" >> Release
-        echo "Description: 自用插件分享，有问题请卸载！！！" >> Release
+    - name: Deploy to GitHub Pages
+      if: success()  # 仅在之前步骤成功时运行
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        personal_token: ${{ secrets.PAT }}  # 使用你添加的秘密变量
+        publish_dir: ./  # 部署整个仓库
