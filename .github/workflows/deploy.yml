@@ -38,5 +38,6 @@ jobs:
       if: success()  # 仅在之前步骤成功时运行
       uses: peaceiris/actions-gh-pages@v3
       with:
-        personal_token: ${{ secrets.PAT }}  # 使用你添加的秘密变量
-        publish_dir: ./  # 部署整个仓库
+        github_token: ${{ secrets.PAT }}  # 使用 GITHUB_TOKEN 进行身份验证
+        publish_branch: gh-pages
+        publish_dir: ./  # 确保你希望发布的内容在仓库根目录下
