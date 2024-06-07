@@ -26,14 +26,14 @@ jobs:
 
     - name: Create Release file
       run: |
-        echo "Origin: YourRepoName" > Release
-        echo "Label: YourRepoName" >> Release
+        echo "Origin: 💫Axs pro✨" > Release
+        echo "Label: 💫Axs pro✨" >> Release
         echo "Suite: stable" >> Release
         echo "Version: 1.0" >> Release
-        echo "Codename: yourrepo" >> Release
-        echo "Architectures: iphoneos-arm" >> Release
+        echo "Codename: 💫Axs pro✨" >> Release
+        echo "Architectures: iphoneos-arm64 iphoneos-arm64e" >> Release
         echo "Components: main" >> Release
-        echo "Description: YourRepoDescription" >> Release
+        echo "Description: 自用插件分享，有问题请卸载！！！" >> Release
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
