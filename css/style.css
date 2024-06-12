@@ -296,6 +296,11 @@ p.legend span {
     margin-left: 10px;
 }
 
+.follow-button {
+  color: #2DEC00;
+  background-color: ;
+}
+
 .input {
     position: relative;
     margin: 20px auto;
