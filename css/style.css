@@ -210,7 +210,7 @@ body {
     justify-content: center;
     align-items: center;
     background: linear-gradient(242deg, rgb(48, 221, 206), rgb(83, 105, 118)) 0% 0% / 200%;
-    animation: Gradient 1s ease infinite;
+    animation: Gradient 5s ease infinite;
 }
 
 .main-bg {
