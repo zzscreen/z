@@ -7,7 +7,7 @@ on:
     paths:
       - 'debs/**'  # 监听 debs 目录下的文件变化
 
-jobs:1
+jobs:
   build:
     runs-on: ubuntu-latest
 
