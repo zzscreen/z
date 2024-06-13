@@ -769,6 +769,23 @@ Author: SquidForce
 Name: 禁用iOS16+粘贴警告弹窗和粘贴提醒 - DisablePasteAlert16
 
 Package: com.sunshinesong.split-view-pro
+Version: 1.1.3
+Architecture: iphoneos-arm64
+Maintainer: sunshinesong
+Installed-Size: 13760
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
+Filename: ./debs/split-view-pro_1.1.3_iphoneos-arm64.deb
+Size: 3503108
+MD5sum: 8781cc06da12986b3fc8f66ccbdebc59
+SHA1: 44e8b47604ae440685fe14bed703619327104b4e
+SHA256: 3fd7aac806d95a64eb4b7f845b0d3efc292961a702aae5f0d114f633047da0ca
+Section: Tweaks
+Description: 分屏，不必太复杂，一切从简即可。
+Author: sunshinesong
+Name: split-view-pro
+Ts: sp-sss
+
+Package: com.sunshinesong.split-view-pro
 Version: 1.1.4
 Architecture: iphoneos-arm64
 Maintainer: sunshinesong
