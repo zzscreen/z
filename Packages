@@ -58,6 +58,23 @@ Icon: https://chinesebuilding.club/pic/cydia.png
 Name: Crane软件多开神器正版-Rootless
 Sponsor: 搬运工
 
+Package: byg.iosios.net.hideserialnumber
+Version: 0.0.4
+Architecture: iphoneos-arm64
+Maintainer: 搬运工
+Depends: firmware (>= 12.2), mobilesubstrate, preferenceloader
+Filename: ./debs/HideSerialNumber隐藏序列号-Rootless.0.0.4.deb
+Size: 58556
+MD5sum: e0aa72ac95bdfc1ffa97e0290f319918
+SHA1: bbbd438ab5f60b4e4b8e0513b3cd151fc3d7db49
+SHA256: cba0b544eebd770699ef3bc0f405b3932c62d3c65fe826fe742af40bf91699b6
+Section: 杂七杂八
+Description: Hide Serial Number in Settings About page.在“设置关于”页面中隐藏/伪装序列号等相关信息。搬运工源，搬你所想！
+Author: ichitaso
+Icon: https://chinesebuilding.club/pic/cydia.png
+Name: HideSerialNumber隐藏序列号-Rootless
+Sponsor: 搬运工
+
 Package: byg.iosios.net.safarix
 Version: 1.1.1
 Architecture: iphoneos-arm64
@@ -69,6 +86,24 @@ Size: 144508
 MD5sum: a7a743aab7eb512b7094ea534dc87ce2
 SHA1: 550a99aee370623b87528bfaaf4b97a61e8df09e
 SHA256: 83e1da32a9271b72edbd77cc246020f40e434aaa26de9a7fc0f69a385dd077ba
+Section: 系统增强
+Description: Safari Essential Features感谢搬运工源群友萝卜购买并分享此插件，非常感谢好萝卜！此插件为iPhone自带浏览器增强插件，功能非常的多，使用，强烈建议用safri的用户下载！已添加进刀刀源汉化文件，感谢妖刀，本插件非常的好用！推荐！
+Author: 0xkuj
+Icon: https://chinesebuilding.club/pic/cydia.png
+Name: SafariX浏览器增强-Rootless
+Sponsor: 搬运工
+
+Package: byg.iosios.net.safarix
+Version: 1.2.0
+Architecture: iphoneos-arm64
+Maintainer: 搬运工
+Installed-Size: 744
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 15.0)
+Filename: ./debs/SafariX浏览器增强-Rootless.1.2.0.deb
+Size: 275848
+MD5sum: cb86bfdb063bf5188827004d8c5c409f
+SHA1: 44a3e91691a232d9557ed399492599fa8c9ac643
+SHA256: f2721da5460b906788fff11b957412c200f74b7a6e637b831e48c616bd35a955
 Section: 系统增强
 Description: Safari Essential Features感谢搬运工源群友萝卜购买并分享此插件，非常感谢好萝卜！此插件为iPhone自带浏览器增强插件，功能非常的多，使用，强烈建议用safri的用户下载！已添加进刀刀源汉化文件，感谢妖刀，本插件非常的好用！推荐！
 Author: 0xkuj
@@ -333,22 +368,6 @@ Description: 根据App图标颜色来自适应App名称和角标的颜色，5系
 Author: b4db1r3 <nfive060@gmail.com>
 Name: OCD5(rootless)
 Sileodepiction: https://xiangfeidexiaohuo.github.io/sileodepiction/ocd5/js.json
-
-Package: com.dao.safarix
-Version: 1.2.0
-Architecture: iphoneos-arm64
-Maintainer: 0xkuj
-Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 15.0), com.dao.safarix.cn
-Conflicts: com.0xkuj.safarix, byg.iosios.net.safarix
-Filename: ./debs/SafariXrootless.1.2.0.deb
-Size: 276104
-MD5sum: 82b18fb95d483ddf74ba88d803fe73da
-SHA1: d27e1d9a968853fc8d4f8f53df038f62448f07e2
-SHA256: 99dc88be8120c6f8d05a601ac806668c793d1812da61067da1b9e16eb617b5ce
-Section: 嗨-工具
-Description: Safari浏览器增强插件！
-Author: 0xkuj
-Name: SafariX(rootless)
 
 Package: com.dao.scinsta
 Version: 0.4.2
