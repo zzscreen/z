@@ -284,22 +284,6 @@ Author: CoolStar & Lizynz
 Name: ClassicFolders 3(rootless)
 Sileodepiction: https://xiangfeidexiaohuo.github.io/sileodepiction/cf3/js.json
 
-Package: com.dao.hideserialnumber
-Version: 0.0.4
-Architecture: iphoneos-arm64
-Maintainer: ichitaso
-Depends: firmware (>= 12.2), mobilesubstrate, preferenceloader, com.dao.hidenumber.cn
-Conflicts: com.ichitaso.hideserialnumber
-Filename: ./debs/HideSerialNumberrootless.0.0.4.deb
-Size: 55196
-MD5sum: 07d3745356d630bfe591ecca65d73177
-SHA1: 54156bf3ebe5c53fc27a8cf4819e9beab3d59520
-SHA256: a4b674e304782aea13fa1c837f81aa57b14e05adf4619bb565cb4318c4a33934
-Section: 嗨-工具
-Description: 在“设置关于”页面中隐藏/伪装序列号等相关信息，源内有汉化包。
-Author: ichitaso
-Name: HideSerialNumber(rootless)
-
 Package: com.dao.kayoko
 Version: 2.0.5
 Architecture: iphoneos-arm64
