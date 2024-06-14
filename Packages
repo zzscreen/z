@@ -284,6 +284,22 @@ Author: CoolStar & Lizynz
 Name: ClassicFolders 3(rootless)
 Sileodepiction: https://xiangfeidexiaohuo.github.io/sileodepiction/cf3/js.json
 
+Package: com.dao.hideserialnumber
+Version: 0.0.4
+Architecture: iphoneos-arm64
+Maintainer: ichitaso
+Depends: firmware (>= 12.2), mobilesubstrate, preferenceloader, com.dao.hidenumber.cn
+Conflicts: com.ichitaso.hideserialnumber
+Filename: ./debs/HideSerialNumberrootless.0.0.4.deb
+Size: 55196
+MD5sum: 07d3745356d630bfe591ecca65d73177
+SHA1: 54156bf3ebe5c53fc27a8cf4819e9beab3d59520
+SHA256: a4b674e304782aea13fa1c837f81aa57b14e05adf4619bb565cb4318c4a33934
+Section: 嗨-工具
+Description: 在“设置关于”页面中隐藏/伪装序列号等相关信息，源内有汉化包。
+Author: ichitaso
+Name: HideSerialNumber(rootless)
+
 Package: com.dao.kayoko
 Version: 2.0.5
 Architecture: iphoneos-arm64
@@ -333,6 +349,22 @@ Description: 根据App图标颜色来自适应App名称和角标的颜色，5系
 Author: b4db1r3 <nfive060@gmail.com>
 Name: OCD5(rootless)
 Sileodepiction: https://xiangfeidexiaohuo.github.io/sileodepiction/ocd5/js.json
+
+Package: com.dao.safarix
+Version: 1.2.0
+Architecture: iphoneos-arm64
+Maintainer: 0xkuj
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 15.0), com.dao.safarix.cn
+Conflicts: com.0xkuj.safarix, byg.iosios.net.safarix
+Filename: ./debs/SafariXrootless.1.2.0.deb
+Size: 276104
+MD5sum: 82b18fb95d483ddf74ba88d803fe73da
+SHA1: d27e1d9a968853fc8d4f8f53df038f62448f07e2
+SHA256: 99dc88be8120c6f8d05a601ac806668c793d1812da61067da1b9e16eb617b5ce
+Section: 嗨-工具
+Description: Safari浏览器增强插件！
+Author: 0xkuj
+Name: SafariX(rootless)
 
 Package: com.dao.scinsta
 Version: 0.4.2
