@@ -1,9 +1,4 @@
-<!-- PROJECT SHIELDS -->
 
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-
-<!-- PROJECT LOGO -->
 <br />
 
 免责声明: 本仓库发布的项目中涉及的所有内容，仅用于测试和学习研究，禁止用于商业用途，不能保证其合法性，准确性，完整性和有效性，请根据情况自行判断.
@@ -16,14 +11,5 @@
 
 聊天交流，请关注Telegram群：https://t.me/oncar2
 
-聊天交流，请添加VX进玩机群：VCR66T
 
 
-![](http://profile-counter.glitch.me/evilbutcher/count.svg)
-
-<!-- links -->
-[your-project-path]:axs6/repo
-[forks-shield]: https://img.shields.io/github/forks/axs6/repo.svg?style=flat-square
-[forks-url]: https://github.com/axs6/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/axs6/repo.svg?style=flat-square
-[stars-url]: https://github.com/axs6/repo/stargazers
